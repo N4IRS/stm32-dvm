@@ -1,9 +1,12 @@
 This is for the Version 3 (Blue Board) ONLY!
 Clone the MMDVM repository from G4LKX
 
-Add STM32F4XX_Lib directory
+git submodule init
+git submodule update
 
-Copy Config.h IO.cpp IOSTM.cpp Makefile SerialSTM.cpp over the existing files.
+Copy Config.h and IO.cpp over the existing files.
+Note: All IO.cpp does is change the startup LED sequence.
+
 
 make dvm
 
