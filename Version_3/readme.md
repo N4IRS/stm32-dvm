@@ -4,9 +4,10 @@ Clone the MMDVM repository from G4LKX
 git submodule init
 git submodule update
 
-Copy Config.h and IO.cpp over the existing files.
-Note: All IO.cpp does is change the startup LED sequence.
+Copy Config.h over the existing file.
 
+Patch IO.cpp to change the startup LED sequence.
+patch <IO.cpp.patch
 
 make dvm
 
