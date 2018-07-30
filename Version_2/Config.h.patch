@@ -1,0 +1,31 @@
+--- Config.h	2018-07-30 05:40:52.860864124 -0400
++++ Config.h	2018-07-30 05:58:23.932228300 -0400
+@@ -39,16 +39,16 @@
+ // #define USE_COS_AS_LOCKOUT
+ 
+ // Use pins to output the current mode
+-// #define ARDUINO_MODE_PINS
++#define ARDUINO_MODE_PINS
+ 
+ // For the original Arduino Due pin layout
+ // #define ARDUINO_DUE_PAPA
+ 
+ // For the ZUM V1.0 and V1.0.1 boards pin layout
+-#define ARDUINO_DUE_ZUM_V10
++// #define ARDUINO_DUE_ZUM_V10
+ 
+ // For the SQ6POG board
+-// #define STM32F1_POG
++#define STM32F1_POG
+ 
+ // For the SP8NTH board
+ // #define ARDUINO_DUE_NTH
+@@ -61,7 +61,7 @@
+ // #define STM32F4_NUCLEO_MODE_PINS
+ 
+ // Pass RSSI information to the host
+-// #define SEND_RSSI_DATA
++#define SEND_RSSI_DATA
+ 
+ // Use the modem as a serial repeater for Nextion displays
+ // #define SERIAL_REPEATER

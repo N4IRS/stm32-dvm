@@ -1,10 +1,12 @@
 This is for the Version 3 (Blue Board) ONLY!
 Clone the MMDVM repository from G4LKX
+cd into the directory
 
 git submodule init
 git submodule update
 
-Copy Config.h over the existing file.
+Patch Config.h for the Version 3 board.
+patch <Config.h.patch
 
 Patch IO.cpp to change the startup LED sequence.
 patch <IO.cpp.patch

@@ -1,0 +1,11 @@
+--- SerialRB.h	2018-07-30 05:41:30.380269830 -0400
++++ SerialRB.h	2018-07-30 05:43:11.290672361 -0400
+@@ -32,7 +32,7 @@
+ #include <Arduino.h>
+ #endif
+ 
+-const uint16_t SERIAL_RINGBUFFER_SIZE = 2000U;
++const uint16_t SERIAL_RINGBUFFER_SIZE = 370U;
+ 
+ class CSerialRB {
+ public:

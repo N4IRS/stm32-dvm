@@ -1,0 +1,46 @@
+--- Config.h	2018-07-24 08:44:45.000000000 -0400
++++ Config.h	2018-07-24 09:49:19.000000000 -0400
+/* Configure Config.h */
+/* For the STM32-DVM Rev 3 */
+/* N4IRS 07-30-2018  */
+@@ -36,16 +36,16 @@
+ // #define EXTERNAL_OSC 19200000
+ 
+ // Allow the use of the COS line to lockout the modem
+-// #define USE_COS_AS_LOCKOUT
++#define USE_COS_AS_LOCKOUT
+ 
+ // Use pins to output the current mode
+-// #define MODE_PINS
++#define MODE_PINS
+ 
+ // For the original Arduino Due pin layout
+ // #define ARDUINO_DUE_PAPA
+ 
+ // For the ZUM V1.0 and V1.0.1 boards pin layout
+-#define ARDUINO_DUE_ZUM_V10
++// #define ARDUINO_DUE_ZUM_V10
+ 
+ // For the SQ6POG board
+ // #define STM32F1_POG
+@@ -64,16 +64,16 @@
+ // #define VK6MST_TEENSY_PI3_SHIELD_I2C
+ 
+ // Pass RSSI information to the host
+-// #define SEND_RSSI_DATA
++#define SEND_RSSI_DATA
+ 
+ // Use the modem as a serial repeater for Nextion displays
+-// #define SERIAL_REPEATER
++#define SERIAL_REPEATER
+ 
+ // To reduce CPU load, you can remove the DC blocker by commenting out the next line
+ #define USE_DCBLOCKER
+ 
+-// Constant Service LED once repeater is running 
+-// Do not use if employing an external hardware watchdog 
++// Constant Service LED once repeater is running
++// Do not use if employing an external hardware watchdog
+ // #define CONSTANT_SRV_LED
+ 
+ // Use the YSF and P25 LEDs for NXDN
