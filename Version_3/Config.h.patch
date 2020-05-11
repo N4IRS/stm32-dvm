@@ -1,6 +1,6 @@
---- Config.h	2020-05-10 11:24:01.214389524 -0400
-+++ Config.h	2020-05-10 11:26:28.863304830 -0400
-@@ -36,20 +36,20 @@
+--- Config.h	2020-05-11 19:25:49.279384023 -0400
++++ Config.h	2020-05-11 16:43:45.527933871 -0400
+@@ -36,21 +36,21 @@
  // #define EXTERNAL_OSC 19200000
  
  // Allow the use of the COS line to lockout the modem
@@ -14,18 +14,22 @@
  // For the original Arduino Due pin layout
  // #define ARDUINO_DUE_PAPA
  
- #if defined(STM32F1)
+-#if defined(STM32F1)
++// #if defined(STM32F1)
  // For the SQ6POG board
 -#define STM32F1_POG
+-#else
 +// #define STM32F1_POG
- #else
++// #else
  // For the ZUM V1.0 and V1.0.1 boards pin layout
 -#define ARDUINO_DUE_ZUM_V10
+-#endif
 +// #define ARDUINO_DUE_ZUM_V10
- #endif
++// #endif
  
  // For the SP8NTH board
-@@ -66,10 +66,10 @@
+ // #define ARDUINO_DUE_NTH
+@@ -66,16 +66,16 @@
  // #define VK6MST_TEENSY_PI3_SHIELD_I2C
  
  // Pass RSSI information to the host
@@ -38,3 +42,11 @@
  
  // To reduce CPU load, you can remove the DC blocker by commenting out the next line
  #define USE_DCBLOCKER
+ 
+-// Constant Service LED once repeater is running 
+-// Do not use if employing an external hardware watchdog 
++// Constant Service LED once repeater is running
++// Do not use if employing an external hardware watchdog
+ // #define CONSTANT_SRV_LED
+ 
+ // Use the YSF and P25 LEDs for NXDN

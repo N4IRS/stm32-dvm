@@ -1,14 +1,16 @@
---- IO.cpp	2020-05-10 11:35:14.478536991 -0400
-+++ IO.cpp	2020-05-10 11:35:53.538776660 -0400
-@@ -151,7 +151,7 @@
+--- IO.cpp	2020-05-11 19:25:38.671368844 -0400
++++ IO.cpp	2020-05-11 18:47:15.277558175 -0400
+@@ -151,8 +151,8 @@
    }
  
  #if defined(MODE_LEDS)
 -  setDStarInt(true);
+-  setDMRInt(false);
 +  setDMRInt(true);
-   setDMRInt(false);
++  setDStarInt(false);
    setYSFInt(false);
    setP25Int(false);
+   setNXDNInt(false);
 @@ -160,7 +160,7 @@
    setFMInt(false);
  
@@ -18,3 +20,16 @@
  
    delayInt(250);
    setYSFInt(true);
+@@ -203,10 +203,10 @@
+   setYSFInt(false);
+ 
+   delayInt(250);
+-  setDMRInt(false);
++  setDStarInt(false);
+ 
+   delayInt(250);
+-  setDStarInt(false);
++  setDMRInt(false);
+ #endif
+ }
+ 
